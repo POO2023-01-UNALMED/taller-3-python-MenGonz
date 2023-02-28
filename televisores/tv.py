@@ -2,14 +2,15 @@ class TV:
 
     __numTV = 0
     #constructor
-    def __init__(self, cls, marca, estado):
+    def __init__(self, marca, estado):
         self.__marca = marca
         self.__estado = estado
         self.__canal = 1
         self.__precio = 500
         self.__volumen = 1
         self.__control = None
-        cls.__numTV += 1
+        __numTV += 1
+        
 
 
     #setters:
@@ -20,9 +21,11 @@ class TV:
     def setPrecio(self, precio):
         self.__precio = precio
     def setVolumen(self,volumen):
-        self.__volumen = volumen 
+        if 0 <= volumen <= 7:
+            self.__volumen = volumen 
     def setCanal(self,canal):
-        self.__canal = canal
+        if 1 <= canal and canal <=120:
+            self.__canal = canal
     
 
     #getters:
