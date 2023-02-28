@@ -24,10 +24,10 @@ class TV:
     def setPrecio(self, precio):
         self.__precio = precio
     def setVolumen(self,volumen):
-        if 0 <= volumen <= 7:
+        if 0 <= volumen <= 7 and self.__estado == True:
             self.__volumen = volumen 
     def setCanal(self,canal):
-        if 1 <= canal and canal <=120:
+        if 1 <= canal <=120 and self.__estado == True:
             self.__canal = canal
     
 
