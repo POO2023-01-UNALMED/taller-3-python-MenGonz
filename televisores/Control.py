@@ -1,4 +1,3 @@
-from TV import *
 class Control:
     __tv = ""
 
