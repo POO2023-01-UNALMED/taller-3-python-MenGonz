@@ -2,14 +2,14 @@ class TV:
 
     __numTV = 0
     #constructor
-    def __init__(self, marca, estado):
+    def __init__(self, cls, marca, estado):
         self.__marca = marca
         self.__estado = estado
         self.__canal = 1
         self.__precio = 500
         self.__volumen = 1
         self.__control = None
-        self.__numTV +=1 
+        cls.__numTV += 1
 
 
     #setters:
