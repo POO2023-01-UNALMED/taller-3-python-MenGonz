@@ -1,6 +1,6 @@
 class TV:
 
-    __numTV = ""
+    __numTV = 0
     #constructor
     def __init__(self, marca, estado):
         self.__marca = marca
@@ -9,6 +9,7 @@ class TV:
         self.__precio = 500
         self.__volumen = 1
         self.__control = None
+        self.__numTV +=1 
 
 
     #setters:
