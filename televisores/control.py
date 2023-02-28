@@ -1,5 +1,5 @@
 class Control:
-    __tv = ""
+    __tv = 0
 
     #métodos igualiticos
     def turnOn(self):
@@ -20,7 +20,11 @@ class Control:
     def enlazar(self,tv):
         self.__tv = tv
         tv.setControl(self)
-    def getTv(self):
-        return self.__tv
-    def setTv(self,tv):
-        self.__tv = tv
+    
+    #métodos de clase
+    @classmethod    
+    def getTv(cls):
+        return cls.__tv
+    @classmethod
+    def setTv(cls,tv):
+        cls.__tv = tv
