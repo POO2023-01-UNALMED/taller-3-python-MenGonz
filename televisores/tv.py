@@ -1,6 +1,11 @@
 class TV:
 
     __numTV = 0
+
+    @classmethod
+    def aumentarNumTV(cls):
+        cls.__numTV += 1
+
     #constructor
     def __init__(self, marca, estado):
         self.__marca = marca
@@ -9,9 +14,7 @@ class TV:
         self.__precio = 500
         self.__volumen = 1
         self.__control = None
-        __numTV += 1
-        
-
+        self.aumentarNumTV()
 
     #setters:
     def setMarca(self, marca):
